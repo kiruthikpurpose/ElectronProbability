@@ -1,0 +1,13 @@
+import numpy as np
+
+def calculate_wavelength(momentum):
+    h = 6.62607015e-34
+    return h / momentum
+
+mass = 9.10938356e-31
+velocity = 1e6
+
+momentum = mass * velocity
+wavelength = calculate_wavelength(momentum)
+
+print(f"Wavelength of the electron: {wavelength} meters")
